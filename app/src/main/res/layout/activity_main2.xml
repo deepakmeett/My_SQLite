@@ -1,57 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     tools:context=".Main2Activity">
+
+    <TextView
+        android:id="@+id/registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="30dp"
+        android:text="Login"
+        android:textSize="25sp"/>
 
     <EditText
         android:id="@+id/ledit1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/ledit2"
-        android:layout_centerInParent="true"
+        android:layout_below="@+id/registration"
         android:hint="Email"
-        android:textSize="18sp" />
+        android:textSize="18sp"/>
 
     <EditText
         android:id="@+id/ledit2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/ltext1"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="10dp"
+        android:layout_below="@id/ledit1"
         android:hint="Password"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/ltext1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="28dp"
-        android:text="Email"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/ltext2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ltext1"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="10dp"
-        android:text="Password"
-        android:textSize="18sp" />
+        android:textSize="18sp"/>
 
     <Button
         android:id="@+id/bt1"
-        android:layout_below="@id/ltext2"
-        android:layout_marginTop="10dp"
-        android:text="next"
-        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ledit2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="next"/>
 </RelativeLayout>

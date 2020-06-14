@@ -1,19 +1,16 @@
 package com.example.my_sqlite;
-
-public class Model {
+public class Fodel {
 
     String email;
     String password;
 
-    public Model(String email, String password) {
+    public Fodel(String email, String password) {
         this.email = email;
         this.password = password;
     }
-    
-    public Model(){
-        
-    }
 
+    public Fodel() {
+    }
 
     public String getEmail() {
         return email;
